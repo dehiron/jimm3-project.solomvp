@@ -1,0 +1,9 @@
+.resultCard{
+    border : solid 1px;
+    display: flex;
+}
+
+.weatherInfo{
+    display:flex;
+    float: right
+}

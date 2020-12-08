@@ -1,0 +1,63 @@
+div {
+    margin: 30px 30px 30px 30px;
+}
+
+span {
+    margin-left:auto;
+    margin: 30px;
+}
+
+.stepTitle{
+  font-size:25px;
+}
+
+select{
+  width:200px;
+  height:30px;
+  margin-left: 10px;
+  text-align-last: center;
+}
+
+.submit-button-container {
+  margin-top : 100Px;
+}
+
+.submit-button {
+  width : 300px;
+  height: 50px;
+}
+
+.hardness {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #000000;
+  margin-left: 4px;
+  }
+.hardness.active {
+  background-color: red;
+  color: white;
+}
+
+.test{
+  width:500px
+}
+
+.slider{
+  width : 300 px;
+  border:0;
+  padding:0;
+}
+.max{
+  margin:0;
+  border:0;
+  padding:0;
+  float: right;
+}
+.min{
+  margin:0;
+  border:0;
+  padding:0;
+  float: left;
+}
