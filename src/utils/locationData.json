@@ -1,0 +1,90 @@
+[
+    {
+      "region": "Hokkaido",
+      "prefectures": [
+        { "name": "Hokkaido"}
+      ]
+    },
+    {
+      "region": "Tohoku",
+      "prefectures": [
+        { "name": "Aomori"},
+        { "name": "Akita"},
+        { "name": "Iwate"},
+        { "name": "Yamagata"},
+        { "name": "Miyagi"},
+        { "name": "Fukushima"}    
+      ]
+    },
+    {
+      "region": "Kanto",
+      "prefectures": [
+        { "name": "Tochigi"},
+        { "name": "Saitama"},
+        { "name": "Gunma"},
+        { "name": "Tokyo"},
+        { "name": "Ibaraki"},
+        { "name": "Kanagawa"},
+        { "name": "Chiba"}  
+      ]
+    },
+    {
+      "region": "Chubu",
+      "prefectures": [
+        { "name": "Niigata"},
+        { "name": "Gifu"},
+        { "name": "Toyama"},
+        { "name": "Yamanashi"},
+        { "name": "Ishikawa"},
+        { "name": "Shizuoka"},
+        { "name": "Fukui"},
+        { "name": "Aichi"},
+        { "name": "Nagano"}  
+      ]
+    },
+    {
+      "region": "Kansai",
+      "prefectures": [
+        { "name": "Mie"},
+        { "name": "Shiga"},
+        { "name": "Kyoto"},
+        { "name": "Osaka"},
+        { "name": "Hyogo"},
+        { "name": "Nara"},
+        { "name": "Wakayama"} 
+      ]
+    },
+    {
+      "region": "Chugoku",
+      "prefectures": [
+        { "name": "Tottori"},
+        { "name": "Shimane"},
+        { "name": "Okayama"},
+        { "name": "Hiroshima"},
+        { "name": "Yamaguchi"}
+      ]
+    },
+    {
+      "region": "Shikoku",
+      "prefectures": [
+        { "name": "Tokushima"},
+        { "name": "Kagawa"},
+        { "name": "Ehime"},
+        { "name": "Kochi"}
+      ]
+    },
+    {
+      "region": "Kyusyu/Okinawa",
+      "prefectures": [
+        { "name": "Fukuoka"},
+        { "name": "Saga"},
+        { "name": "Nagasaki"},
+        { "name": "Kumamoto"},
+        { "name": "Oita"},
+        { "name": "Miyazaki"},
+        { "name": "Kagoshima"},
+        { "name": "Okinawa"}
+      ]
+    }
+]
+  
