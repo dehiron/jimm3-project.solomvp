@@ -210,6 +210,7 @@ function App() {
   //
   return (
     <div className="App">
+      <h1 className = "App-header" >Find Mountains & Check Weather App</h1>
       {view ? (
         <div className>
           <FilterLocation 
