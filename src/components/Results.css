@@ -6,17 +6,27 @@
 .mountainInfo{
     border : solid 1px;
     width : 500px;
+    background-color: rgb(183, 238, 183);
 }
 
 .weatherInfo{
     display:flex;
-    float: right
+    float: right;
 }
 
-.hoge{
+.day-weather{
     cursor: pointer;
 }
 
 .weather{
     display:inline-flex;
+    border: solid 1px;
+}
+
+.weatherCheck{
+    cursor:pointer;
+    background-color: rgb(183, 238, 183);
+    color:darkgray;
+    padding:5px;
+    border-bottom: solid 1px;
 }

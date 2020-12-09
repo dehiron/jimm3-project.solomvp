@@ -38,5 +38,75 @@
         "hardness":"☆☆☆☆",
         "latitude":35.613056,
         "longitude":138.780278
+    },
+    {
+        "id": 4,
+        "name": "Mt.Kirigamine",
+        "region": "Chubu",
+        "prefecture": "Nagano",
+        "height":1925,
+        "hardness":"☆",
+        "latitude":36.0611,
+        "longitude":138.1148
+    },
+    {
+        "id": 5,
+        "name": "Mt.Meakan",
+        "region": "Hokkaido",
+        "prefecture": "Hokkaido",
+        "height":1499,
+        "hardness":"☆☆",
+        "latitude":43.385165126,
+        "longitude":144.005333312
+    },
+    {
+        "id": 6,
+        "name": "Mt.Shari",
+        "region": "Hokkaido",
+        "prefecture": "Hokkaido",
+        "height":1547,
+        "hardness":"☆☆",
+        "latitude":43.7656,
+        "longitude":144.7181
+    },
+    {
+        "id": 7,
+        "name": "Mt.Myoko",
+        "region": "Chubu",
+        "prefecture": "Niigtata",
+        "height":2452,
+        "hardness":"☆☆",
+        "latitude":36.8861797886,
+        "longitude":138.109982893
+    },
+    {
+        "id": 8,
+        "name": "Mt.Yatsugatake",
+        "region": "Chubu",
+        "prefecture": "Nagano",
+        "height":2899,
+        "hardness":"☆☆☆",
+        "latitude":35.968996124,
+        "longitude":138.368665192
+    },
+    {
+        "id": 9,
+        "name": "Mt.Yarigatake",
+        "region": "Chubu",
+        "prefecture": "Gifu",
+        "height":3180,
+        "hardness":"☆☆☆",
+        "latitude":36.311667,
+        "longitude":137.648889
+    },
+    {
+        "id": 10,
+        "name": "Mt.Kuju",
+        "region": "Kyusyu",
+        "prefecture": "Oita",
+        "height":1787,
+        "hardness":"☆☆",
+        "latitude":33.082013,
+        "longitude":131.241732
     }
 ]

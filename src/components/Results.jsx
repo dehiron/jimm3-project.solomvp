@@ -82,15 +82,15 @@ export default function Results(props){
         .then(response => response.json())
         // .then(json => console.log(json.daily[0]));
         .then(json => {
-            setWeather0(json.daily[0].weather[0].description); 
+            setWeather0(json.daily[0].weather[0].main); 
             setTempHigh0(json.daily[0].temp.max);
             setTempLow0(json.daily[0].temp.min);
 
-            setWeather1(json.daily[1].weather[0].description); 
+            setWeather1(json.daily[1].weather[0].main); 
             setTempHigh1(json.daily[1].temp.max);
             setTempLow1(json.daily[1].temp.min);
 
-            setWeather2(json.daily[2].weather[0].description); 
+            setWeather2(json.daily[2].weather[0].main); 
             setTempHigh2(json.daily[2].temp.max);
             setTempLow2(json.daily[2].temp.min);
         })
