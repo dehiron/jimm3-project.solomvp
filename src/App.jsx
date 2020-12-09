@@ -7,8 +7,8 @@ import FilterSlider from "./components/FilterSlider.jsx";
 import SubmitButton from "./components/SubmitButton.jsx";
 import Results from "./components/Results.jsx"
 import locationData from "./utils/locationData.json";
+import mountainData from "./utils/mountainData.json";
 import { useEffect } from "react";
-require('dotenv').config();
 
 function App() {
 
@@ -26,7 +26,6 @@ function App() {
   const [ higherLimit, setHigherLimit] = React.useState("3667")
   const [resultCards, setResultCards] = React.useState();
   const [view, setView] = React.useState(true);
-  const [weatherInfo, setWeatherInfo] = React.useState([]);
   //
   //
   //********************************************************************************************************
@@ -172,16 +171,17 @@ function App() {
   //とりあえずテストとしてここにおく。最終的にはResultのページに、取得した山の緯度経度情報を元にfetchして取得する。
 
   
-  async function getWeatherData() {
-    const apiKey = process.env.REACT_APP_OW_KEY;
-    console.log(apiKey)
-    const response = await fetch('https://api.openweathermap.org/data/2.5/onecall?lat=35.681236&lon=139.767125&units=metric&lang=ja&appid=' + apiKey)
-    .then(response => response.json())
-    // .then(json => console.log(json.daily));
-    .then(json => setWeatherInfo(json.daily[0].dt));
-  }
+  // async function getWeatherData(latitude,longitude) {
+  //   const apiKey = process.env.REACT_APP_OW_KEY;
+  //   // console.log(apiKey)
+  //   // const response = await fetch("https://api.openweathermap.org/data/2.5/onecall?lat=32.5304&lon=131.0614&units=metric&lang=ja&appid=" + apiKey)
+  //   const response = await fetch("https://api.openweathermap.org/data/2.5/onecall?lat="+latitude+"&lon="+longitude+"&units=metric&lang=ja&appid=" + apiKey)
+  //   .then(response => response.json())
+  //   // .then(json => console.log(json.daily));
+  //   .then(json => setWeatherInfo(json.daily[0]));
+  // }
 
-  // getWeatherData()
+  // getWeatherData(32.5304,131.0614)
 
   //
   //
@@ -189,8 +189,18 @@ function App() {
   //************************************Fetch data from openWeather API*************************************
   //********************************************************************************************************
 
-
-
+  const mountainMaster = []
+ 
+  for (let i= 0; i < mountainData.length; i++){
+    mountainMaster[i] = []
+    mountainMaster[i].push(mountainData[i].name)
+    mountainMaster[i].push(mountainData[i].region)
+    mountainMaster[i].push(mountainData[i].prefecture)
+    mountainMaster[i].push(mountainData[i].height)
+    mountainMaster[i].push(mountainData[i].hardness)
+    mountainMaster[i].push(mountainData[i].latitude)
+    mountainMaster[i].push(mountainData[i].longitude)
+  }
 
 
   //********************************************************************************************************
@@ -217,7 +227,6 @@ function App() {
             currentView = {view}
             filterView = {toggleFilterView}
             resultsView = {toggleResultsView}
-            weatherDataFunc = {getWeatherData}
             />
         </div>
       ) : (
@@ -239,7 +248,12 @@ function App() {
             filterView = {toggleFilterView}
             resultsView = {toggleResultsView}/>
           <Results 
-            weatherData = {weatherInfo}/>
+            mountainMaster = {mountainMaster}
+            region = {region}
+            prefecture = {prefecture}
+            hardness = {hardness}
+            lowerLimit = {lowerLimit}
+            higherLimit = {higherLimit}/>
         </div>
       )}
     </div>

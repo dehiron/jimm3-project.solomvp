@@ -3,7 +3,20 @@
     display: flex;
 }
 
+.mountainInfo{
+    border : solid 1px;
+    width : 500px;
+}
+
 .weatherInfo{
     display:flex;
     float: right
+}
+
+.hoge{
+    cursor: pointer;
+}
+
+.weather{
+    display:inline-flex;
 }

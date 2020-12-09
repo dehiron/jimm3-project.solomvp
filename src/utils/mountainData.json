@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Mt.Tsukuba",
+        "region": "Kanto",
+        "prefecture": "Ibaraki",
+        "height":877,
+        "hardness":"☆",
+        "latitude":36.221832446,
+        "longitude":140.103999584
+    },
+    {
+        "id": 2,
+        "name": "Mt.Bandai",
+        "region": "Tohoku",
+        "prefecture": "Fukushima",
+        "height":1819,
+        "hardness":"☆☆",
+        "latitude":37.600497598,
+        "longitude":140.06999972
+    },
+    {
+        "id": 3,
+        "name": "Mt.Aso",
+        "region": "Kyusyu",
+        "prefecture": "Kumamoto",
+        "height":1592,
+        "hardness":"☆",
+        "latitude":32.5304,
+        "longitude":131.0614
+    },
+    {
+        "id": 3,
+        "name": "Mt.Suisho",
+        "region": "Chubu",
+        "prefecture": "Toyama",
+        "height":2986,
+        "hardness":"☆☆☆☆",
+        "latitude":35.613056,
+        "longitude":138.780278
+    }
+]
